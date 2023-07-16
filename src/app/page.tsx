@@ -45,7 +45,7 @@ export default function Home() {
               Confiável e
               <br /> Open-Source
             </h1>
-            <p className="break-words text-xl w-[20vw] font-normal text-start text-gray-400 -tracking-wide leading-6">
+            <p className="break-words text-xl max-w-[30vw] font-normal text-start text-gray-400 -tracking-wide leading-6">
               Bender bot - Potencialize seu Servidor com Música e Gerenciamento
               Avançado!
             </p>
