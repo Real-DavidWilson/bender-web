@@ -13,7 +13,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
-        'spin-slow': 'spin 5s linear infinite',
+        'spin-slow': 'spin 15s linear infinite',
       }
     },
   },
@@ -22,10 +22,10 @@ module.exports = {
       {
         dark: {
           primary: "#E04E39",
-          secondary: "#FFFFFF",
+          secondary: "#cbe1f5",
           accent: "#2a91c1",
-          neutral: "#292730",
-          "base-100": "#282b36",
+          neutral: "#19171f",
+          "base-100": "#0e0f14",
           info: "#9ad1e4",
           success: "#21836f",
           warning: "#d58e0b",

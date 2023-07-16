@@ -15,8 +15,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" data-theme="dark">
-      <body className={openSans.className + " " + "min-h-screen bg-gradient-to-br from-base-100 to-black"}>{children}</body>
+    <html
+      className="bg-gradient-to-br from-base-100 to-black/40 h-screen"
+      lang="pt-BR"
+      data-theme="dark"
+    >
+      <body className={openSans.className}>{children}</body>
     </html>
   );
 }
