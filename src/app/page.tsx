@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="max-h-screen flex flex-col items-center">
-      <header className="navbar p-20">
+      <header className="navbar p-8 lg:p-16">
         <div className="flex-1">
           <a className="normal-case text-2xl font-bold">BENDER</a>
         </div>
@@ -34,27 +34,28 @@ export default function Home() {
           </a>
         </div>
       </header>
-      <main className="h-full p-16 w-full flex space-x-8 items-center justify-center">
-        <div className="space-y-10 flex flex-col items-start justify-center">
-          <div className="flex flex-col items-start justify-center w-[40vw] space-y-8 rounded-xl">
+      <main className="h-full w-full flex space-x-8 items-center justify-center mt-10 md:mt-20 lg:p-16 lg:mt-0">
+        <div className="space-y-10 flex flex-col items-center lg:items-start justify-center">
+          <div className="flex flex-col justify-center w-[90vw] lg:w-[40vw] space-y-8 rounded-xl">
             <h1
               className={
-                "text-white text-7xl font-semibold text-start -tracking-wider break-words"
+                "text-white lg:text-7xl md:text-6xl text-4xl/[44.8px] font-semibold text-center lg:text-start -tracking-wider break-words"
               }
             >
-              Confiável e
+              Confiável<br className="block lg:hidden" /> e
               <br /> Open-Source
             </h1>
-            <p className="break-words text-xl max-w-[30vw] font-normal text-start text-gray-400 -tracking-wide leading-6">
+            <p className="break-words text-xl md:text-3xl lg:text-xl max-w-[90vw] lg:max-w-[30vw] font-normal text-center lg:text-start text-gray-400 -tracking-wide leading-6">
               Bender bot - Potencialize seu Servidor com Música e Gerenciamento
               Avançado!
             </p>
+            <img src="/bender.png" alt="" className="lg:hidden"/>
           </div>
           <div>
             <a
               target="_blank"
               href="https://discord.com/oauth2/authorize?client_id=879875255164895284&permissions=8&scope=bot%20applications.commands"
-              className="btn rounded-full btn-neutral btn-outline px-14"
+              className="btn rounded-full btn-neutral btn-outline px-14 mt-0 mb-11"
             >
               <svg
                 width="24px"
@@ -70,7 +71,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <img src="/bender.png" alt="" />
+        <img  className="hidden lg:block" src="/bender.png" alt=""/>
       </main>
     </div>
   );
